@@ -1,0 +1,5 @@
+2026-10-22T22:57:33+07:00	titanic	01-getting-started-titanic/submissions/baseline.csv	baseline RF (Claude) - badge
+2026-10-30T23:15:03+07:00	playground-series-s6e5	02-playground-s6e5/submissions/baseline.csv	lgbm baseline (Claude) - badge
+2026-10-31T13:59:28+07:00	connectx	03-simulation-connectx/baseline/submission.py	win/block/center heuristic (Claude) - badge
+2026-10-31T14:01:01+07:00	santa-2025	13-santa-2026/data/sample_submission.csv	sample submission (Claude) - badge
+2026-10-31T14:01:23+07:00	march-machine-learning-mania-2026	14-march-mania-2027/data/SampleSubmissionStage2.csv	sample 0.5 baseline (Claude) - badge

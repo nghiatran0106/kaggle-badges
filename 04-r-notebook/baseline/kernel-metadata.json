@@ -1,0 +1,15 @@
+{
+  "id": "tranphunghia233871/titanic-eda-r-badge",
+  "title": "Titanic EDA R badge",
+  "code_file": "titanic-eda-r.ipynb",
+  "language": "r",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_tpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": [],
+  "competition_sources": ["titanic"],
+  "kernel_sources": [],
+  "model_sources": []
+}

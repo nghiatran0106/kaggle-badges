@@ -1,0 +1,15 @@
+{
+  "id": "tranphunghia233871/connectx-first-player-advantage",
+  "title": "ConnectX first player advantage",
+  "code_file": "connectx-first-player-advantage.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "false",
+  "enable_gpu": "false",
+  "enable_tpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": ["tranphunghia233871/connectx-self-play-game-logs"],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

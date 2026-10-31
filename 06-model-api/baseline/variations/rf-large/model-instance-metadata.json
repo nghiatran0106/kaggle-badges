@@ -1,0 +1,14 @@
+{
+  "ownerSlug": "tranphunghia233871",
+  "modelSlug": "titanic-randomforest-baseline",
+  "instanceSlug": "rf-large",
+  "framework": "scikitLearn",
+  "overview": "RandomForest (rf-large) for Titanic survival.",
+  "usage": "# Model Format\npickle of sklearn RandomForestClassifier\n\n# Training Data\nKaggle Titanic train.csv\n\n# Model Inputs\nDataFrame with columns Pclass, Sex(0/1 female=1), Age, SibSp, Parch, Fare, Embarked(S=0,C=1,Q=2)\n\n# Model Outputs\nSurvived 0/1\n\n# Model Usage\n```python\nimport pickle\nmodel = pickle.load(open('model.pkl','rb'))\nmodel.predict(X)\n```\n\n# Fine-tuning\nRetrain with sklearn.\n\n# Changelog\nv1 initial",
+  "licenseName": "Apache 2.0",
+  "fineTunable": false,
+  "trainingData": ["https://www.kaggle.com/competitions/titanic"],
+  "modelInstanceType": "Unspecified",
+  "baseModelInstanceId": 0,
+  "externalBaseModelUrl": ""
+}

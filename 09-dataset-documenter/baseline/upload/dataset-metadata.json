@@ -1,0 +1,89 @@
+{
+  "title": "ConnectX Self-Play Game Logs",
+  "subtitle": "400 Connect Four games: heuristic agent vs random and negamax, move by move",
+  "id": "tranphunghia233871/connectx-self-play-game-logs",
+  "description": "## Context\nGame logs generated locally with `kaggle-environments` for the Kaggle **ConnectX** simulation competition (6x7 board, 4 in a row).\n\nA simple heuristic agent (win if possible, else block, else play closest to the center) played 100 games as first player and 100 games as second player against each of the built-in `random` and `negamax` agents.\n\n## Content\n- `games.csv`: one row per game with players and result.\n- `moves.csv`: one row per move, in order.\n\nJoin the two files on `game_id`.\n\n## Use cases\n- Analyse first-player advantage.\n- Train a move-prediction or value model.\n- Opening statistics (which first columns win most).\n\n## Collection methodology\nGenerated with `kaggle_environments.make('connectx').run([...])`, kaggle-environments 1.33.2, Python 3.12, October 2026.\n\n## License\nCC0: public domain.",
+  "isPrivate": false,
+  "licenses": [
+    {
+      "name": "CC0-1.0"
+    }
+  ],
+  "keywords": [
+    "games",
+    "board games",
+    "simulations",
+    "reinforcement learning",
+    "tabular"
+  ],
+  "expectedUpdateFrequency": "never",
+  "userSpecifiedSources": "Self-generated with kaggle-environments ConnectX environment (https://github.com/Kaggle/kaggle-environments).",
+  "resources": [
+    {
+      "path": "games.csv",
+      "description": "One row per game: which agent played each mark, the winner and game length.",
+      "schema": {
+        "fields": [
+          {
+            "name": "game_id",
+            "description": "Unique game identifier (join key with moves.csv)",
+            "type": "integer"
+          },
+          {
+            "name": "agent_1",
+            "description": "Agent playing mark 1 (moves first): heuristic, random or negamax",
+            "type": "string"
+          },
+          {
+            "name": "agent_2",
+            "description": "Agent playing mark 2 (moves second)",
+            "type": "string"
+          },
+          {
+            "name": "winner_mark",
+            "description": "1 or 2 for the winning mark, 0 for a draw",
+            "type": "integer"
+          },
+          {
+            "name": "n_moves",
+            "description": "Number of environment steps until the game ended",
+            "type": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "path": "moves.csv",
+      "description": "One row per move in play order.",
+      "schema": {
+        "fields": [
+          {
+            "name": "game_id",
+            "description": "Game identifier (foreign key to games.csv)",
+            "type": "integer"
+          },
+          {
+            "name": "move_no",
+            "description": "Step number within the game, starting at 1",
+            "type": "integer"
+          },
+          {
+            "name": "player_mark",
+            "description": "Mark (1 or 2) of the player who moved",
+            "type": "integer"
+          },
+          {
+            "name": "agent",
+            "description": "Name of the agent who moved",
+            "type": "string"
+          },
+          {
+            "name": "column",
+            "description": "Column index 0-6 where the piece was dropped",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ]
+}

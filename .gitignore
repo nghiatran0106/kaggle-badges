@@ -1,0 +1,16 @@
+# competition data / large files
+**/data/
+*.zip
+*.parquet
+*.pkl
+*.joblib
+# generated submissions (keep the folder, not the files)
+**/submissions/*.csv
+# secrets
+.env
+kaggle.json
+access_token
+# python / jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/

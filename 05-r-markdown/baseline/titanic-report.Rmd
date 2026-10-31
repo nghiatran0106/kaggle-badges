@@ -1,0 +1,23 @@
+---
+title: "Titanic survival report (R Markdown badge baseline)"
+output: html_document
+---
+
+```{r setup, message=FALSE}
+library(tidyverse)
+path <- list.files("/kaggle/input", pattern = "^train.csv$", recursive = TRUE, full.names = TRUE)[1]
+train <- read_csv(path, show_col_types = FALSE)
+```
+
+## Survival rate by class
+
+```{r}
+train %>% group_by(Pclass) %>% summarise(survival = mean(Survived), n = n())
+```
+
+## A simple logistic regression
+
+```{r}
+fit <- glm(Survived ~ Sex + Pclass + Age, data = train, family = binomial)
+summary(fit)
+```

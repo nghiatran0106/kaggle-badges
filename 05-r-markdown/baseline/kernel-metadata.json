@@ -1,0 +1,15 @@
+{
+  "id": "tranphunghia233871/titanic-report-rmarkdown-badge",
+  "title": "Titanic report RMarkdown badge",
+  "code_file": "titanic-report.Rmd",
+  "language": "rmarkdown",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_tpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": [],
+  "competition_sources": ["titanic"],
+  "kernel_sources": [],
+  "model_sources": []
+}

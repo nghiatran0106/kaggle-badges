@@ -1,0 +1,10 @@
+{
+  "ownerSlug": "tranphunghia233871",
+  "title": "Titanic RandomForest Baseline",
+  "slug": "titanic-randomforest-baseline",
+  "subtitle": "Scikit-learn RandomForest survival classifier for the Kaggle Titanic competition",
+  "isPrivate": true,
+  "description": "# Model Summary\nRandomForestClassifier (scikit-learn) predicting passenger survival on the Kaggle Titanic dataset. Two variations: `rf-small` (50 trees) and `rf-large` (500 trees), both max_depth=6.\n\n# Model Characteristics\n- Input: 7 tabular features (Pclass, Sex, Age, SibSp, Parch, Fare, Embarked) after simple encoding/imputation.\n- Output: binary label Survived (0/1) and class probabilities.\n- Serialized with pickle.\n\n# Data Overview\nTrained on `train.csv` of the Titanic - Machine Learning from Disaster competition (891 rows).\n\n# Evaluation Results\n5-fold CV accuracy ~0.82; public leaderboard 0.787 (rf, 300 trees).\n\n# Usage\n```python\nimport pickle\nmodel = pickle.load(open('model.pkl', 'rb'))\nmodel.predict(X)\n```\n\n# Limitations\nEducational baseline; no hyper-parameter search, minimal feature engineering.",
+  "publishTime": "",
+  "provenanceSources": "https://www.kaggle.com/competitions/titanic"
+}
