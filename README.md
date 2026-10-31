@@ -19,15 +19,15 @@ Thiết lập một lần: `source scripts/env.sh` (venv ở `~/.venvs/kaggle-ba
 | 5 | R Markdown Coder | ✅ script .Rmd đã push | 05 |
 | 6 | API Model Creator | ✅ model tạo qua CLI | 06 |
 | 7 | Model Variation Creator | ✅ 2 variation | 06 |
-| 8 | Model Tagger | 🖱️ thêm tag cho model | 06 |
-| 9 | Model Documenter | 🖱️ ảnh bìa + tag + notebook public → 10/10 | 06 |
+| 8 | Model Tagger | ✅ đã có tag tabular, binary classification | 06 |
+| 9 | Model Documenter | 🖱️ model đã public; còn notebook public và checklist trên trang model | 06 |
 | 10 | Benchmark Task local builder | ✅ task `vietnam-capital` | 07 |
-| 11 | Utility Scripter | 🖱️ File → Set as Utility Script | 08 |
-| 12 | Dataset Documenter | 🖱️ đang 15/17; chạy `09-dataset-documenter/baseline/publish.sh` | 09 |
-| 13 | Model Pipeline Creator | 🖱️ Output → New Model | 10 |
-| 14 | Github Coder | 🖱️ cần push repo public trước | 11 |
-| 15 | Linked Dataset Creator | 🖱️ cần push repo public trước | 11 |
-| 16 | Linked Model Creator | 🖱️ cần push repo public trước | 11 |
+| 11 | Utility Scripter | ✅ đã Save Version 31/10, chờ xác nhận badge | 08 |
+| 12 | Dataset Documenter | 🖱️ 16/17; còn nhập tay mô tả 10 cột trên web | 09 |
+| 13 | Model Pipeline Creator | ✅ model `titanic-model` chứa `titanic_gbm.pkl` | 10 |
+| 14 | Github Coder | ✅ notebook đã import và chạy xong | 11 |
+| 15 | Linked Dataset Creator | ✅ dataset `connectx-games-linked` | 11 |
+| 16 | Linked Model Creator | 🖱️ repo đã public; còn tạo model từ link | 11 |
 | 17 | Code Forker | 🖱️ Copy & Edit, sửa, Save | 12 |
 | 18 | Stylish · Collector · Bookmarker · Agent of Discord | 🖱️ khoảng 15 phút | 15 |
 | 19 | Santa Competitor | ✅ late submission santa-2025 (173.65), chờ xác nhận badge; nếu không tính thì Santa 2026 | 13 |

@@ -27,7 +27,7 @@
           {
             "name": "game_id",
             "description": "Unique game identifier (join key with moves.csv)",
-            "type": "integer"
+            "type": "number"
           },
           {
             "name": "agent_1",
@@ -42,12 +42,12 @@
           {
             "name": "winner_mark",
             "description": "1 or 2 for the winning mark, 0 for a draw",
-            "type": "integer"
+            "type": "number"
           },
           {
             "name": "n_moves",
             "description": "Number of environment steps until the game ended",
-            "type": "integer"
+            "type": "number"
           }
         ]
       }
@@ -60,17 +60,17 @@
           {
             "name": "game_id",
             "description": "Game identifier (foreign key to games.csv)",
-            "type": "integer"
+            "type": "number"
           },
           {
             "name": "move_no",
             "description": "Step number within the game, starting at 1",
-            "type": "integer"
+            "type": "number"
           },
           {
             "name": "player_mark",
             "description": "Mark (1 or 2) of the player who moved",
-            "type": "integer"
+            "type": "number"
           },
           {
             "name": "agent",
@@ -80,7 +80,7 @@
           {
             "name": "column",
             "description": "Column index 0-6 where the piece was dropped",
-            "type": "integer"
+            "type": "number"
           }
         ]
       }
